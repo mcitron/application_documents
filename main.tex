@@ -1,0 +1,158 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath}
+\usepackage{cancel}
+\usepackage{xspace}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amscd}
+\usepackage{amsfonts}
+\usepackage{graphicx}%
+\usepackage{fancyhdr}
+
+
+\theoremstyle{plain} \numberwithin{equation}{section}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{finalremark}[theorem]{Final Remark}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{question}{Question} \topmargin-2cm
+
+\textwidth6in
+
+\setlength{\topmargin}{0in} \addtolength{\topmargin}{-\headheight}
+\addtolength{\topmargin}{-\headsep}
+
+\setlength{\oddsidemargin}{0in}
+%\newcommand{\alphat}{\ensuremath{\alpha_{\text{T}}}\xspace}
+\DeclareRobustCommand{\alphat}{$\alpha_{\text{T}}$}
+\DeclareRobustCommand{\met}{$\mbox{$E_\text{T}^{\rm miss}$}\xspace$}
+
+
+\oddsidemargin  0.0in \evensidemargin 0.0in
+
+\pagestyle{fancy}\lhead{Research Statement} \rhead{August 2005}
+\chead{{\large{\bf My Name}}} \lfoot{} \rfoot{\bf \thepage} \cfoot{}
+
+\newcounter{list}
+
+\begin{document}
+
+My research has centred on searching for signatures from new physics models
+which may allow fundamental problems in particle physics, such as the origin of 
+dark matter, to be resolved. In the three years of my PhD I have taken a 
+leading role in the \alphat analysis group searching for generic models of Supersymmetry (SUSY) and dark matter. 
+As part of the SUSY group in the CMS collaboration, we used the first data from Run 2 of the LHC 
+at the highest ever energies reached at a collider to place strong constraints 
+on new physics models. The \alphat analysis group is small and so I had direct involvement 
+in most areas of the analysis. This meant I gained experience in rapid data analysis as well
+as understanding in how sensitivity to new physics signatures can be maximised
+while maintaining a robust analysis. 
+
+In the coming years the jumps in energies and luminosity that marked the previous running of the 
+LHC will come to an end. While inclusive style analyses will still play a role in continuing 
+to explore ever greater masses, I believe the best chance for discovery will come from 
+exploiting the large datasets with more targeted searches. Such searches present particular
+challenges and in the following paragraphs I will discuss these challenges and how the experience 
+gained during my PhD has prepared me well to meet them.
+
+\section*{Research activities}
+\subsection*{Hardware}
+For any analysis the trigger strategy is critical as data lost
+at this stage cannot be recovered. On joining CMS I have worked on designing effective
+trigger algorithms at both the hardware and analysis level. At the hardware level
+I worked to design an algorithm to identify jets as well as subtract contributions from simultaneous collisions, 
+pile-up (PU), for the level 1 hardware trigger. By taking advantage of the increased granularity 
+and flexibility of the upgraded system the new algorithm saw a significant increase in performance.
+Such service work is not only an important duty for the collaboration but is also
+very important to gain understanding of the detector performance and, as discussed below,
+can provide important lessons for analysis.
+\subsection*{Analysis}
+
+SUSY is a leading candidate as a BSM theory to resolve problems in the Standard Model (SM).
+To naturally provide a higgs mass at $m_H \approx 125~\text{GeV}$, coloured SUSY particles at the TeV
+scale may be expected. For R-parity conserving SUSY, these will decay to the 
+lightest supersymmetric particle (LSP), a dark matter candidate. The final state 
+typically contains hadronic activity (in the form of jets) as well as momentum 
+imbalance (\met) from the LSP. When the mass splitting in the SUSY spectra are small, 
+discovery may be particularly challenging as the energy in the final state is reduced.
+
+The record energy reached for Run 2 of the LHC provided excellent opportunity for discovery
+in the first months of operation. I worked on the \alphat analysis searching
+for a new physics final state containing jets and \met. The results from the 
+\alphat analysis were among the first to be shown publicly with $2.6{fb}^{-1}$ at the 
+November Jamboree and $12.9{fb}^{-1}$ at ICHEP16, for which I gave the successful
+approval talk. I held key roles within the analysis and gained important experience 
+in rapidly understanding and then analysing data to search for new physics. 
+
+The first task I undertook with the \alphat analysis built on my experience with the 
+trigger to design a level one trigger strategy to increase acceptance for compressed models
+with lower energies in the final state. The trigger is a crucial part of any search
+as data lost at this stage cannot be recovered. Taking advantage of the new algorithm
+the strategy I designed was able to significantly increase acceptance for compressed models.
+
+My main responsibility for the \alphat analysis has been the statistical interpretation
+of the results of the search. This key role requires a holistic and deep understanding
+of all sections of the analysis that are included in the final likelihood model. I have been 
+instrumental in efforts to measure systematic uncertainties in data and through simulation and to
+ensure their effect with the correct correlation scheme is robustly included in the likelihood 
+model with the correct correlation scheme. This experience is extremely valuable for searches 
+for new physics, as correctly modelling the backgrounds and their uncertainties in a systematics 
+dominated environment may be crucial for discovery.
+
+Another of my responsibilities has been the addition of a \met like dimension to the \alphat
+analysis. This was a significant change in strategy as the analysis moved from a simple cut and
+count to a template based analysis. This provides signifcant increase in sensitivity to a wide 
+range of models, however, also provides challenges to ensure a robust analysis. I acheived this
+by ensuring the modeling of the \met shape was validated, and systematic uncertianties derived, 
+using signal depleted control regions in data. In addition, systematic effects from known sources were included
+with relevant correlation.
+
+Alongside my work in the \alphat analysis I have actively contributed within the SUSY group.
+As well as my work on the trigger strategy I was part of a working group that investigated
+the reliability of limits for stop production and decay to top and LSP where the mass splitting is
+close to the top mass. This required an indepth study of the features of the decay and how it 
+may be separated from the background.  
+
+\subsection*{Simplified Likelihood}
+Independantly from my group, I worked with a collaborator in CMS to make a proposal 
+for additional material to be released by CMS analyses
+to allow their searches to be easily reinterpreted by those outside the collaboration. 
+This work built on my experience with the statistical framework for $\alpha_T$ as well as being 
+informed by my work with the mastercode collaboration. By releasing the predictions and covariances between analysis bins 
+a simplified likelihood may be defined for any search. A recommondation to release this information for all analyses
+will be made in the SUSY and exotica groups. In addition, I have co-authored a document,
+that will be mane public, describing generically how this may be used to reinterpret a search.
+
+\subsection*{Mastercode}
+For the MasterCode collaboration I worked on a framework for 
+deriving constraints from direct searches for new physics on GUT scale models of supersymmetry 
+(SUSY). This required the rapid comprehension, implementation and validation of several 
+searches from both the CMS and ATLAS experiments. Finally, I worked on 
+showing that through combining several analysis targeting different final states the sensitivity of the 
+limit to the non-flavoured sector of the SUSY spectra can be approximately 
+removed. These universal limits can be used to greatly reduce the 
+time taken to sample a GUT model parameter space. This experience has been useful in understanding
+the kinds of models that are well motivated and evade current experimental limits, such as gauge or anomoly mediated
+supersymmetry breaking models, and may be targeted in the future. I have also gained an appreciation
+of the information needed to reliably reinterpret an analysis.
+
+\section*{Research Plans}
+
+My extensive experience in
+
+\begin{itemize}
+\item 
+\end{itemize}
+
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
