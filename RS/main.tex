@@ -1,0 +1,191 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath}
+\usepackage{cancel}
+\usepackage{xspace}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amscd}
+\usepackage{amsfonts}
+\usepackage{graphicx}%
+\usepackage{fancyhdr}
+
+% \usepackage[a4paper, total={7in, 8in}]{geometry}
+\usepackage[bottom=0.5in,left=0.8in,right=0.8in]{geometry}
+
+\theoremstyle{plain} \numberwithin{equation}{section}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{finalremark}[theorem]{Final Remark}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{question}{Question} \topmargin-2cm
+
+% \textwidth7in
+%
+% \setlength{\topmargin}{0in} \addtolength{\topmargin}{-\headheight}
+% \addtolength{\topmargin}{-\headsep}
+%
+% \setlength{\oddsidemargin}{0in}
+%\newcommand{\alphat}{\ensuremath{\alpha_{\text{T}}}\xspace}
+\DeclareRobustCommand{\alphat}{$\alpha_{\text{T}}~$}
+\DeclareRobustCommand{\met}{$\mbox{$E_\text{T}^{\rm miss}$}\xspace$}
+
+
+% \oddsidemargin  0.0in \evensidemargin 0.0in
+
+\pagestyle{fancy}\lhead{Matthew Citron}\rhead{November 2016}
+\chead{{\large{\bf Statement of interest}}} \lfoot{} \rfoot{\bf \thepage} \cfoot{}
+
+\newcounter{list}
+
+\begin{document}
+\section*{Statement of interest}
+%\section*{\fontsize{30}{30}\selectfont Statement of intent}
+\noindent 
+My research has focused on using data from the LHC to search for signatures of beyond standard model (BSM) physics models which may resolve 
+fundamental problems in particle physics, such as the origin of dark matter. 
+In the three years of my PhD I have taken a leading role in the \alphat 
+analysis group searching for generic models of Supersymmetry (SUSY) and dark matter. 
+Within the SUSY group in the CMS collaboration, we used the first data at 13TeV from Run 2 of the 
+Large Hadron Collider (LHC) to place strong constraints on a wide range of BSM physics models. As part of a small group, I had direct involvement 
+in areas throughout the analysis. This has allowed me to gain wide ranging experience in both rapid comprehension
+and analysis of data from the LHC as well as understanding in how sensitivity to BSM physics signatures can be maximised
+while maintaining a robust analysis. In parallel, I have gained experience in hardware though work on the 
+level one (L1) trigger and in phenomenology through my involvement with the MasterCode collaboration.
+
+In the coming years the jumps in energies and luminosity that marked the previous running of the 
+LHC will come to an end. While inclusive style analyses will continue to play a role in 
+exploring ever larger phase space, targeted searches for particular models 
+may provide the best chance for discovery. In the following paragraphs I will describe how the experience 
+gained during my PhD has well prepared me for the challenge of discovering BSM physics at the LHC.
+
+\section*{Research activities since January 2014}
+
+\subsection*{Search for BSM physics}
+
+SUSY is a leading candidate as a BSM theory to resolve problems in the Standard Model (SM).
+For SUSY to naturally predict a Higgs boson mass at $m_H \approx 125~\text{GeV}$, coloured 
+SUSY particles at the TeV scale may be expected. SUSY may also offer a compelling dark matter
+candidate, the lightest supersymmetric particle (LSP). The final state from the coloured SUSY 
+particle decays typically contains hadronic activity (in the form of jets) as well as momentum 
+imbalance (\met) from the LSP. When the mass splittings in the SUSY spectra are small, 
+discovery may be particularly challenging as the energy in the final state is reduced.
+
+The record energy reached for Run 2 of the LHC provided an excellent opportunity for discovery
+in the first months of operation. I worked on the \alphat analysis searching for a BSM phyiscs in a 
+final state containing jets and \met. 
+To take advantage of this opportunity for discovery required rapid and reliable analysis of this dataset. 
+I held a pivotal role in ensuring the results from the \alphat analysis were among the 
+first to be shown publicly with $2.3{fb}^{-1}$ of data at CERN in November 2015
+and with $12.9{fb}^{-1}$ of data at ICHEP16, for which I gave the successful
+approval talk. My key and wide ranging involvement in the analysis allowed me to gain important experience 
+in quickly and robustly understanding and then analysing data to search for BSM physics. 
+
+The first task I undertook with the \alphat analysis built on my experience with the 
+trigger, described below, to design a L1 trigger strategy to increase acceptance for compressed models,
+which have lower energies in the final state, while maintaining a low trigger rate. 
+Taking advantage of the new L1 jet algorithm I was able to significantly increase 
+acceptance for compressed models, beneficial for a wide ranges of searches.
+
+My main responsibility for the \alphat analysis has been the statistical interpretation
+of the data collected by the search. This key role requires a holistic and deep understanding
+of all sections of the analysis that are included in the final likelihood model. During my
+PhD I have worked to completely rewrite the statistical framework and redesign the likelihood mode. 
+I have been instrumental in efforts to measure systematic uncertainties in data and through simulation and to
+ensure their effect is robustly included in the likelihood 
+model with the correct correlation scheme. This is particularly important for compressed models which typically
+contribute most significantly in systematic limited regions. Looking forward, this experience is extremely valuable 
+for future searches for BSM physics as correctly modelling the backgrounds and their uncertainties in a systematics 
+dominated environment could be crucial for discovery.
+
+Another of my responsibilities has been the inclusion of \met~shapes into the \alphat
+analysis. This was a significant change in strategy as the analysis moved from a simple 'cut and
+count` to a shape based analysis. This allows signifcant increase in sensitivity to a wide 
+range of models, however, it also provides challenges to ensure a robust analysis. I acheived this
+by ensuring the modeling of the \met~shape was validated, and systematic uncertianties derived, 
+using signal depleted control regions in data. In addition, systematic effects on the \met~shape from known sources,
+as well as their correlation, were derived from simulation and considered within the likelihood model.
+
+Alongside my work in the \alphat analysis I have actively contributed within the SUSY group.
+As well as my work on the trigger strategy I was part of a working group that investigated
+the reliability of limits for models with containing supersymmetric top (stop) production followed by decay 
+to top and LSP where the mass splitting is close to the top mass. This required an in depth study of the features of the decay and how it 
+may be separated from the background and is useful experience for a future search for such 'stealth stops`.
+
+\subsection*{Hardware}
+My hardware experience has centred on the level 1 (L1) hardware trigger.
+For any analysis the trigger is critical as data lost at this stage cannot be recovered. 
+For the L1 trigger, I worked to design an algorithm to identify jets as well 
+as subtract contributions from simultaneous collisions, 
+pile-up (PU). By taking advantage of the increased granularity and flexibility of the 
+upgraded system the new algorithm saw a significant increase in performance, beneficial
+to all analyses on CMS involving jets. Such service work is not only an important duty for the collaboration but is also
+highly useful for gaining understanding of the detector performance and, as discussed previously,
+can provide important lessons for analysis. As the LHC moves to higher instantaneous 
+luminosities and pile-up, effective triggering will become an ever greater challenge 
+for which my experience will be highly useful. 
+
+\subsection*{Simplified Likelihood}
+Independantly from my group, I worked with a collaborator in CMS to make a proposal 
+for additional material to be released by CMS analyses
+to allow their searches to be easily reinterpreted by those outside the collaboration. 
+This work built on my experience with the statistical framework for $\alpha_T$ as well as being 
+informed by my work with the MasterCode collaboration. By releasing the predictions and covariances between analysis bins 
+a simplified likelihood may be defined for any search. A recommondation to release this information for all analyses
+will be made in the SUSY and exotica groups. In addition, I have co-authored a document,
+that will be made public, describing generically how this may be used to reinterpret a search.
+
+\subsection*{Mastercode}
+In work that starting while an undergratuate, as part of the MasterCode collaboration I developed a framework for 
+deriving constraints from direct searches for BSM physics on GUT scale models of supersymmetry 
+(SUSY). This required the comprehension, implementation and validation of several 
+searches from both the CMS and ATLAS experiments. Using this framework, I worked on
+showing that through combining several analysis targeting different final states the sensitivity of the 
+limit to the non-coloured sector of the SUSY spectra can be approximately removed. 
+These 'universal limits` can be used to greatly reduce the 
+time taken to sample a GUT model parameter space. This experience has been useful in understanding
+the kinds of models that are well motivated and evade current experimental limits and may be targeted in the 
+future, such as anomoly mediated supersymmetry breaking models (aMSB). I have also gained an appreciation
+of the information needed to reliably reinterpret an analysis and which should therefore be released in CMS publications.
+
+\section*{Research Plans}
+
+My extensive experience in
+
+\begin{itemize}
+\item Rapid data comprehension and analysis
+\item Designing a search and optimising sensitivty for BSM physics signatures
+\item Likelihood model building and statistical analysis 
+\item Triggering algorithms and strategies
+\item Phenomenology with MasterCode
+\end{itemize}
+
+will allow me to take a leading and pivotal role in searches for BSM physics within a large collaboration.
+I would like to continue searching for signatures of such BSM physics using CMS data from collisions at the LHC.
+In addition, I would like to take a greater role in contributing directly to the detector to improve performance
+as well as gaining further understanding of detector performance. As inclusive searches have failed 
+to uncover any evidence for BSM physics, I believe the best opportunity for discovery will 
+come from searches targeting specific models using the large datasets that will come
+from continued LHC operation at 13TeV. For example, as I have seen from my experience within 
+the MasterCode collaboration, the most stringent limits from colliders on the aMSB 
+model require searches for disappearing tracks. Such searches will require good understanding of the detector,
+the ability to optimise the sensitivity of a search and a robust evaluation of the background model.
+
+Over the last three years as a PhD student on CMS I have seized the chance to gain experience with real data
+and work effectively as part of a large collaboration, being based at CERN much of this time. I have played 
+a key role within the very successful \alphat search as well as contributing to the SUSY group as a whole.
+I am eager to build on my experience on the LHC to play a pivatol role in searches for BSM physics as the LHC
+moves into this new and exciting phase. Santa Barbara has a very strong and leading presence within the particle
+physics community with major contributions in calorimetry and for searches for interesting and sensitive signature
+of BSM physics models. I believe it would be the ideal place to continue contributing to the search for BSM physics.
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
