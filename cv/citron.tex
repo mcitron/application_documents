@@ -1,0 +1,79 @@
+% Copyright 2006-2012 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+\moderncvstyle{classic} %oldstyle
+\moderncvcolor{blue}
+%\nopagenumbers{}
+
+% misc
+\usepackage{amsmath} 
+\usepackage{ragged2e}
+
+% adjust the page margins
+%\usepackage[scale=0.8]{geometry}
+\usepackage[left=0.8in, right=0.8in, bottom=1.0in, top=1.0in]{geometry}
+\setlength{\hintscolumnwidth}{2.5cm}
+
+% to show numerical labels in the bibliography
+\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+%\renewcommand{\refname}{Scientific Communication}
+
+%\usepackage{url} % urls in bibtex references
+\usepackage{cite} % allow ranges of citations 
+%\usepackage{hyperref} % embedded citation links
+
+\usepackage{multibib} % bibliography with mutiple entries
+\newcites{pub,coord,review,prelim,proc,conf,thesis,talks}{{},{},{},{},{},{},{},{}} % Empty bibliography headers
+
+% remove the numbers from the bibliography
+\makeatletter
+\renewcommand\@biblabel[1]{\textbullet}
+\makeatother
+
+% personal data
+\firstname{Matthew}
+\familyname{Citron}
+% all optional below
+\title{PhD student, Imperial College London} 
+\address{Blackett Laboratory}{Imperial College London}
+%\phone{+41~(0)22~7671728}
+\mobile{+44~(0)7815~520631}
+\email{matthew.citron09@imperial.ac.uk}
+%\homepage{cern.ch/robert.bainbridge}
+\extrainfo{\today}
+%\photo[64pt][0.4pt]{picture}
+%\quote{Some quote (optional)} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\makecvtitle
+
+\vspace{-1.4cm}
+\input{education}
+\input{experience}
+\input{responsibilities}
+\input{awards_and_grants}
+\vspace{0.5cm}
+\input{computing}
+\input{outreach}
+\input{scientific_communication}
+\input{activities}
+\input{referees}
+
+% \input{teaching}
+% \clearpage
+% \input{coordination}
+% \clearpage
+% \input{research}
+% \clearpage
+%\input{plan}
+%\clearpage
+
+\end{document}
