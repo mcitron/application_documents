@@ -1,0 +1,80 @@
+\documentclass[11pt]{article}
+
+\usepackage{kantlipsum}   %% only for demo
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{marvosym}
+\usepackage{graphicx}
+
+
+\pagestyle{empty}
+
+\usepackage[scale=0.775]{geometry}
+\setlength{\parindent}{0pt}
+\addtolength{\parskip}{6pt}
+
+\def\firstname{Matthew}
+\def\familyname{Citron}
+\def\FileAuthor{\firstname \familyname}
+\def\FileTitle{\firstname \familyname's cover letter}
+\def\FileSubject{Cover letter}
+\def\FileKeyWords{\firstname \familyname, Cover letter}
+
+\renewcommand{\ttdefault}{pcr}
+
+\usepackage{url}
+\urlstyle{tt}
+\ifpdf
+  \usepackage[pdftex,pdfborder=0,breaklinks,baseurl=http://,pdfpagemode=None,pdfstartview=XYZ,pdfstartpage=1]{hyperref}
+  \hypersetup{
+    pdfauthor   = \FileAuthor,%
+    pdftitle    = \FileTitle,%
+    pdfsubject  = \FileSubject,%
+    pdfkeywords = \FileKeyWords,%
+    pdfcreator  = \LaTeX,%
+    pdfproducer = \LaTeX}
+\else
+  \usepackage[dvips]{hyperref}
+\fi
+
+
+\begin{document}
+\sffamily   % for use with a résumé using sans serif fonts;
+%\rmfamily  % for use with a résumé using serif fonts;
+\hfill%
+\begin{minipage}[t]{.6\textwidth}
+\raggedleft%
+{\bfseries Matthew Citron}\\[.35ex]
+\small\itshape%
+Blackett Laboratory\\ Imperial College London\\
+\Telefon~+44~(0)7728~209851\\
+\Letter~\href{mailto:matthew.citron09@imperial.ac.uk}{matthew.citron09@imperial.ac.uk}\\~\\
+
+\today
+\end{minipage}\\[1em]
+%
+% \begin{minipage}[t]{.4\textwidth}
+% \raggedright%
+% {\bfseries Company XYZ}\\[.35ex]
+% \small\itshape%
+% street and number\\
+% postcode city
+% \end{minipage}
+\hfill % US style
+%\\[1em] % UK style
+\raggedright
+Dear Sir or Madam:\\[1.5em]
+%
+\kant[1-3]
+
+%Yours sincerely,\\[2em] % if the opening is "Dear Mr(s) Doe,"
+Yours faithfully,\\[2em] % if the opening is "Dear Sir or Madam,"
+%
+%\includegraphics[scale=0.75]{signature_blue}\\
+{\bfseries Matthew Citron}\\
+%
+\vfill%
+% {\slshape Enclosure}
+% {\slshape Attachment: curriculum vit\ae{}}
+\end{document}
