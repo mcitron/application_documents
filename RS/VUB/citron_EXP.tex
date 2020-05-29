@@ -1,0 +1,191 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath}
+\usepackage{cancel}
+\usepackage{xspace}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amscd}
+\usepackage{amsfonts}
+\usepackage{graphicx}%
+\usepackage{fancyhdr}
+
+% \usepackage[a4paper, total={7in, 8in}]{geometry}
+\usepackage[bottom=0.4in,left=0.8in,right=0.8in]{geometry}
+\usepackage{fancyhdr}
+
+\theoremstyle{plain} \numberwithin{equation}{section}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{finalremark}[theorem]{Final Remark}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{question}{Question} \topmargin-2cm
+
+% \textwidth7in
+%
+% \setlength{\topmargin}{0in} \addtolength{\topmargin}{-\headheight}
+% \addtolength{\topmargin}{-\headsep}
+%
+% \setlength{\oddsidemargin}{0in}
+%\newcommand{\alphat}{\ensuremath{\alpha_{\text{T}}}\xspace}
+\DeclareRobustCommand{\alphat}{$\alpha_{\text{T}}~$}
+\DeclareRobustCommand{\met}{$\mbox{$E_\text{T}^{\rm miss}$}\xspace$}
+
+
+% \oddsidemargin  0.0in \evensidemargin 0.0in
+
+\pagestyle{fancy}\lhead{Matthew Citron}\rhead{May 2020}
+\chead{{\large{\bf Reasons for candidature}}} \lfoot{} \cfoot{\bf \thepage}
+
+\newcounter{list}
+
+\begin{document}
+\section*{Reasons for candidature}
+%\section*{\fontsize{30}{30}\selectfont Statement of intent}
+\noindent 
+
+The milliQan experiment is a dedicated scintillator-based detector
+proposed to search for millicharged particles produced in collisions
+at the LHC. The main thrust of my proposed activities at VUB 
+would be to bring my experience in supervising the construction of the detector components
+to support VUB in becoming a major contributor to the milliQan experiment.
+
+\subsection*{The milliQan detector}
+
+The proposed milliQan detector is comprised of a scintillator array placed in
+the CMS drainage gallery approximately 30m from the CMS interaction point (IP), 
+with 17m of rock providing shielding from collisional backgrounds. Fractionally charged particles 
+deposit only $(Q/e)^2$ of the energy deposited of a particle with charge $e$ with 
+the same mass and therefore a large path length of scintillator is required for
+detection. The milliQan detector is proposed as two 
+$1~\mathrm{m}\times1~\mathrm{m}\times3~\mathrm{m}$ plastic scintillator arrays 
+positioned next to each other and each aligned with the CMS IP. The arrays are 
+subdivided into 54 "modules" held in place by a mechanical cage on
+a rotatable mechanical structure. Each module contains 4 longitudinal ``layers"
+of $2\times2$ arrays of $5~\mathrm{cm}\times5~\mathrm{cm}\times60~\mathrm{cm}$ 
+volume scintillator ``bars" optically coupled to high-gain PMTs. The 
+proposed design is shown in Fig.~\ref{fig:detmodel}. The layers are 
+separated by 5~cm lead bricks to reduce correlated backgrounds 
+between layers. There are thus a total of 864 ($9\times6\times4\times4$) bars 
+in each of the 2 arrays. Each array is surrounded by six 0.5 
+inch thick scintillator ``panels" that serve as an active veto of muons produced 
+by cosmic rays and their shower particles. Finally, at the top and bottom of the array
+XX inch thick scintillator ``slabs" serve to identify muons produced at the CMS IP which
+reach the detector. 
+
+% This prototype has also provided important lessons for design of the full detector, motivating
+% a four layer array to control backgrounds. As described in Sec.~\ref{sec:},
+% the design can be easily altered to meet funding constraints or to target different
+% millicharged particle mass ranges.
+
+Each scintillator bar is expected to produce an average of $\mathcal{O}(1)$ photoelectron (PE) 
+from each attached PMT for a millicharged particle with $Q=\mathcal{O}(10^{-3})~e$ that traverses 
+our 60~cm plastic scintillator. In order to control backgrounds, a hit in
+a bar in each of the four layers of the scintillator array within a small time 
+window and in a path pointing at the CMS IP will be required. For charges around 
+$Q\sim(10^{-3})~e$ the background is expected to be $\mathcal{O}(10)$ events per year while for higher
+charges, $Q\gtrsim 10^{-2}~e$, additional requirements on the size of the response in the bars and hits in the slabs
+allow a total background of less than one event. The highly modular design of the milliQan detector has allowed the feasibility 
+to be confirmed through the operation of a 1\% prototype detector at the LHC.
+
+The milliQan collaboration includes physicists from around ten institutes in the US, 
+Europe and Asia. Dr Steven Lowette at VUB has been a member of the collaboration since
+2019.  
+
+\subsection*{Main activities at VUB}
+
+The bulk of the construction will be the 1728 bars needed for the detector. 
+Each assembly consists of optically coupling a PMT+base to the scintillator, 
+wrapping with reflective material, and light-tight black taping. 
+After assembly each bar has to be checked for light leaks and calibrated. 
+Tested bars will be shipped to LHC Point 5 at CERN, where installation into the module 
+cages will occur. For the milliQan prototype this construction
+and calibration was undertaken at UCSB by undergraduates under my supervision.
+As part of this position, I would come to VUB to assist in construction and
+provide training to students to undertake this work, however, the
+the main propose of the visiting position would be to pursue several
+studies that are crucial to finalising the design and optimising the performance 
+of the milliQan experiment. This could be carried out in collaboration with Dr Lowette and
+could could form a significant part of thesis work for undergraduates and graduates at VUB.
+
+One such study would be the active veto potential for the full detector which
+is of vital important for the sensitivity reach for low charge signals as these face large
+backgrounds from correlated cosmic muon shower particles and radiation within the cavern. 
+The panels surrounding the detector are too thin to efficiently identify deposits from such particles
+and so the veto performance of bars on the outer edges of the detector must be extensively 
+studied. It may also be possible to improve the light collection efficiency of the panels
+using light guides or multiple PMT readouts such that lower energy deposits may be seen. 
+In combination this could dramatically reduce the background for signals with $Q \sim 0.001e$.
+The active veto can be studied both on the surface at VUB and
+CERN and underground at the detector position.
+
+For higher charge signals ($Q \gtrsim 0.05$) it challenging to distinguish the 
+signal from beam muons as the amplification required for the milliQan bars to
+be able to detect single photons causes such signals to saturate the readout 
+of the DAQ. The slabs that will be placed at the top and bottom of each milliQan array
+are therefore critical to identifying the charge of signals which saturate the bars.
+The design of these slabs has not been finalised and would form another interesting
+project. A practical solution is to use four scintillator volumes
+each covering a quarter of the surface area. However, issues including eliminating
+edge spacing between the slabs, the required thickness and strategies for coupling
+PMTs have not been finalised. It is foreseen that the design and construction of
+these slabs could be driven by VUB.
+
+Once the detector has been constructed it will be critical to calibrate the 
+energy response and timing of the bars to identify signal and effectively veto backgrounds. 
+With the prototype this was achieved using
+cosmic muons and their shower particles, however, this entails large
+uncertainties. A radioactive source, such as Na22, would allow much greater control 
+on the position and energy deposits of the particles used to calibrate these crucial
+quantities. This calibration could be undertaken by VUB students at CERN under supervision.
+
+% \subsection*{Contingencies and other overlap with VUB}
+
+It is possible that funding will not be available to construct the full milliqan detector in
+time for the next run of the LHC, due to begin in XX. In this case a smaller detector may be constructed using
+available PMTs taken from a previous experiment. Such a detector could be approximately six times
+larger than the previous prototype and could collect at least five times the data, allowing for
+signifcantly improved limits. The noise levels of the 878 PMTs 
+are too high to allow triggering on single PE signals, however, from studies with the prototype
+it has been possible to reject this noise using a simple low pass filter. The performance of
+such a contingency experiment could be dramatically improved through the development of a
+filter and amplifier applied to the PMT output. This could be studied and developed by VUB.
+
+In addition to shared interests in milliQan, my work on long-lived and exotic signatures
+overlaps with the research topics of Dr Lowette and Prof Blekman at VUB. While not
+being the main purpose of the position, I believe there would be amply opportunity
+to build new collaborations for searches with the CMS detector. One particular example 
+could include the development of new dedicated triggers for fractionally 
+charged particles to allow a search using the muon system with possible 
+sensitivity to $Q> 0.1$, with obvious complementarity to work with the milliQan detector.
+
+Alternative locations for milliQan as well as potential sensitivity to other signatures
+are also of great interest and could be investigated through the position at VUB.
+
+\subsection*{Funding}
+
+I would plan to take part in funding proposals from VUB for the full milliQan detector. 
+As I have extensive experience with both building detector components and coordinating 
+a search for millicharged particles, I believe this would signifcantly strengthen the technical
+expertise of proposals.
+
+\subsection*{Timeline}
+
+The next Run of the LHC is expected to begin in May 2021, however, only a small $20fb^{-1}$ dataset is 
+expected to be collected. Therefore a clear target for the completion of the detector
+is the begining of 2022. Approximately six months is estimated for the construction with another size months
+estimated for commissioning. This provides an ideal timeline for the visiting position at VUB as 
+the studies outined above can largely be undertaken before and during the construction of the detector.
+The dedicated calibrations can take place during the commisioning phase. These studies will also be
+required under the contingency scenario of a smaller detector (outlined above) with approximately the same timeline.
+
+\end{document}
+
+
+%% end of file `template.tex'.
+
