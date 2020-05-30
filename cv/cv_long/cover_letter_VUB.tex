@@ -1,0 +1,89 @@
+\documentclass[12pt]{article}
+
+\usepackage{kantlipsum}   %% only for demo
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{marvosym}
+\usepackage{graphicx}
+
+
+\pagestyle{empty}
+
+\usepackage[scale=0.775]{geometry}
+\setlength{\parindent}{0pt}
+\addtolength{\parskip}{6pt}
+
+\def\firstname{Matthew}
+\def\familyname{Citron}
+\def\FileAuthor{\firstname \familyname}
+\def\FileTitle{\firstname \familyname's cover letter}
+\def\FileSubject{Cover letter}
+\def\FileKeyWords{\firstname \familyname, Cover letter}
+
+\renewcommand{\ttdefault}{pcr}
+
+\usepackage{url}
+\urlstyle{tt}
+\ifpdf
+  \usepackage[pdftex,pdfborder=0,breaklinks,baseurl=http://,pdfpagemode=None,pdfstartview=XYZ,pdfstartpage=1]{hyperref}
+  \hypersetup{
+    pdfauthor   = \FileAuthor,%
+    pdftitle    = \FileTitle,%
+    pdfsubject  = \FileSubject,%
+    pdfkeywords = \FileKeyWords,%
+    pdfcreator  = \LaTeX,%
+    pdfproducer = \LaTeX}
+\else
+  \usepackage[dvips]{hyperref}
+\fi
+
+
+\begin{document}
+\sffamily   % for use with a résumé using sans serif fonts;
+%\rmfamily  % for use with a résumé using serif fonts;
+\hfill%
+\begin{minipage}[t]{.6\textwidth}
+\raggedleft%
+{\bfseries Matthew Citron}\\[.35ex]
+\small\itshape%
+Broida Hall\\ University of California, Santa Barbara\\
+\Telefon~+1~8057109721\\
+\Letter~\href{mailto:mcitron@cern.ch}{mcitron@cern.ch}\\~\\
+
+\today
+\end{minipage}\\[1em]
+%
+% \begin{minipage}[t]{.4\textwidth}
+% \raggedright%
+% {\bfseries Company XYZ}\\[.35ex]
+% \small\itshape%
+% street and number\\
+% postcode city
+% \end{minipage}
+\hfill % US style
+%\\[1em] % UK style
+%\raggedright
+Dear Alexander Sevrin\\[1.5em]
+%
+The letter is to apply for the 10\% faculty position at Vrije Universiteit Brussel. I am currently a Postdoctoral
+researcher at the University of California, Santa Barbara working on searches for signatures of 
+new long-lived particles on the milliQan and CMS experiments at the LHC.
+My academic experience, education, research interests and reasons for my candidature are
+detailed in the attached documents. Given the great potential for collaboration with 
+researchers at Vrije Universiteit Brussel, I am very excited by the
+research that could be pursued with this position. If awarded this position, I 
+would like to support Vrije Universiteit Brussel in becoming the European centre for 
+the research and design of the milliQan detector at the LHC. Please let me know if you have any questions. 
+Thank you very much for your consideration.
+%Yours sincerely,\\[2em] % if the opening is "Dear Mr(s) Doe,"
+
+Yours faithfully,\\[2em] % if the opening is "Dear Sir or Madam,"
+%
+%\includegraphics[scale=0.75]{signature_blue}\\
+{\bfseries Matthew Citron}\\
+%
+\vfill%
+% {\slshape Enclosure}
+% {\slshape Attachment: curriculum vit\ae{}}
+\end{document}
