@@ -21,6 +21,7 @@
 
 % to show numerical labels in the bibliography
 \makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+\renewcommand\refname{References}
 %\renewcommand{\refname}{Scientific Communication}
 
 %\usepackage{url} % urls in bibtex references
@@ -31,9 +32,9 @@
 \newcites{pub,coord,review,prelim,proc,conf,thesis,talks}{{},{},{},{},{},{},{},{}} % Empty bibliography headers
 
 % remove the numbers from the bibliography
-\makeatletter
-\renewcommand\@biblabel[1]{\textbullet}
-\makeatother
+% \makeatletter
+% \renewcommand\@biblabel[1]{\textbullet}
+% \makeatother
 
 % personal data
 \firstname{Matthew}
