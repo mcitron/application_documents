@@ -1,0 +1,213 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath}
+\usepackage{cancel}
+\usepackage{xspace}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amscd}
+\usepackage{amsfonts}
+\usepackage{graphicx}%
+\usepackage{fancyhdr}
+
+% \usepackage[a4paper, total={7in, 8in}]{geometry}
+\usepackage[bottom=0.4in,left=0.8in,right=0.8in]{geometry}
+\usepackage{fancyhdr}
+
+\theoremstyle{plain} \numberwithin{equation}{section}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{finalremark}[theorem]{Final Remark}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{question}{Question} \topmargin-2cm
+
+% \textwidth7in
+%
+% \setlength{\topmargin}{0in} \addtolength{\topmargin}{-\headheight}
+% \addtolength{\topmargin}{-\headsep}
+%
+% \setlength{\oddsidemargin}{0in}
+%\newcommand{\alphat}{\ensuremath{\alpha_{\text{T}}}\xspace}
+\DeclareRobustCommand{\alphat}{$\alpha_{\text{T}}~$}
+\DeclareRobustCommand{\met}{$\mbox{$E_\text{T}^{\rm miss}$}\xspace$}
+
+
+% \oddsidemargin  0.0in \evensidemargin 0.0in
+
+\pagestyle{fancy}\lhead{Matthew Citron}\rhead{July 2020}
+\chead{{\large{\bf Research proposal}}} \lfoot{} \cfoot{\bf \thepage}
+
+\newcounter{list}
+
+\begin{document}
+\section*{Research proposal}
+%\section*{\fontsize{30}{30}\selectfont Statement of intent}
+\noindent 
+
+Intro/summary
+\subsection*{Overview}
+
+\subsection*{Motivation}
+
+In recent years there has been increasing interest in the possibility 
+that astrophysical evidence for dark matter may indicate the existence 
+of not just a single new particle but an entire dark sector
+of particles and interactions with a rich and complex structure. The milliQan experiment 
+was proposed in 2014 as a dedicated scintillator-based detector to search 
+for millicharged particles that can arise in dark sector models. 
+
+
+\subsection*{The milliQan detector}
+
+The milliQan detector is a dedicated detector 
+designed to search for fractionally 
+charged particles produced in the high energy proton-proton collisions of the LHC. 
+Such particles deposit only $(Q/e)^2$ of the energy 
+deposited by a particle with charge $e$ of
+the same mass so a large path length of scintillator is required for
+their detection. The milliQan detector is proposed as a large plastic
+scintillator array in CMS experimental cavern. The array is comprised of multiple layers
+of scintillator ``bars", each optically coupled to a high-gain photo-multiplier tube.
+To provide sensitivity to the small energy deposits from fractional charges as low as $0.001 e$, 
+each PMT must be capable of detecting a single scintillation photon. 
+The detector is designed such that backgrounds can be greatly mitigated
+by requiring a hit in a bar in each of the four layers 
+of the scintillator array within a small time 
+window. The highly modular design of the milliQan detector 
+has allowed the feasibility to be confirmed through the operation 
+of a small prototype detector at the LHC.
+
+The milliQan prototype, shown in Figure~\ref{fig:demo}, consists of eighteen 
+$5\times5\times80$ cm scintillator bars arranged in three layers 
+of $2\times3$ scintillator plus PMT units. 
+In addition to the bars, ``slabs" of $2.5 \times 20 \times 30$ cm scintillator 
+and thin panels of $1 \times 18 \times 100$ cm scintillator are inserted 
+to tag charged particles such as muons from the CMS IP, 
+study backgrounds from radiation, and to simulate the active veto of a larger detector.
+The prototype ran succesfully from March 2018 to May 2019, providing crucial
+experience in the operation of a dedicated scintillator based detector. The data collected
+also allowed the response of the dector to be calibrated and backgrounds to 
+be characterised. Despite using sub-optimal PMTs 
+and being only a small fraction of the size of the full milliQan detector,
+this search achieved world-leading sensitivity to fractionally charged particles and forms
+a paper submitted to PRD~\cite{ball2020search}. The purpose of this proposal is to build on
+the experience gained from the operation of the prototype to design and operate a new detector
+with enhanced sensitivty to millicharged particles.
+
+The milliQan collaboration includes 38 physicists from 10 institutes in the US, 
+Europe and Asia. I have been a member of the milliQan collaboration since Sept 2017 and immediately joined the
+team installing the prototype designed to study the feasibility and
+develop understanding of the experiment. I led the upgrade of the prototype, which built on the experience 
+gained during the first operational run, to expand the size of the active area
+sensitive to signal deposits and add new components designed to provide
+active vetos for the signal volume and measure backgrounds. Since January 2018 
+I have been responsible for coordinating the data analysis for the milliQan experiment.
+The analysis objectives included the calibration of the data from the detector,
+characterising and measuring backgrounds, and simulating the generation and propagation of 
+signals and backgrounds as well as the response of the detector.
+
+\subsection*{Upgraded prototype}
+
+This proposal is install a phase 2 prototype of the milliQan experiment with dramatically improved sensitivity, 
+particularly for smaller charges. TThe design of the experiment is motivated by 
+the comprehensive understanding of the backgrounds and performance of the phase 1 prototype. 
+The proposed upgrade is composed of a $0.2~\mathrm{m}\times0.2~\mathrm{m}\times3~\mathrm{m}$ plastic scintillator array aligned with 
+the CMS interaction point. The scintillator arrays will be comprised of 64 $5~\rm{cm}\times5~\rm{cm}\times60cm$ 
+bars arranged into 4 layers of $4\times4$ scintillator plus PMT units. The PMTs used will be Hammatsu R878s, 
+available without cost from a previous experiment. 
+The use of 4 layers (rather than the 3 used for the phase 1 prototype)
+will dramatically reduce the background contribution from correlated cosmic shower and environmental radiation sources 
+that limited the sensitivity of the prototype detector. In addition, the expansion in size of each layer,
+from six to sixteen bars, will significantly improve both the signal acceptance and active veto performance of the detector. 
+In addition to the bars, two "slabs" of $20~\rm{cm}\times30~\rm{cm}\times2.5cm$ scintillator and 
+six thin "panels" of $50\rm{cm}\times150\rm{cm}\times{1}$ 
+will be inserted to tag charged particles such as muons from the CMS IP, study backgrounds from radiation, 
+and provide an active veto. Analog pulses from the PMTs must be read out,
+digitized, and stored for offline analysis. Which can be achieved using CAEN V1743 digitizers. 
+These have 16 channels, each of which provide a high sample rate (up to 3.2 GS/s) and a long readout window (1024 samples), 
+suitable for digitising the waveforms generated by the PMTs. The CAEN digitisers also allow a flexible triggering
+scheme to be defined that relies on the coincidence of pulses within a small time window in PMTs in different layers. This is necessary
+as the rate of SPE pulses across the detector (\~50kHz) is much larger than the maximum allowed data aquisition rate of O(100Hz). 
+The phase 2 prototype will require a total of 73 channels (64 bars, 2 slabs and 6 panels and one channel
+for the LHC clock information from the CMS experiment) requiring five CAEN V1743 digitisers. 
+In operating the phase 1 prototype, it was found that the R878 PMTs have large high frequency noise components
+that cause too large a rate to efficiently trigger on single photoelectron pulses. A
+simple amplifier incorporating a low-pass filter has been designed at UCSB to reject this noise and
+allow such signals to be triggered. In combination with the update to 4 layers of scintillator bars
+and enlarged active veto capability, this will allow the upgraded detector to have dramatically improved sensitivity.
+
+The overall background for the four layer configuration is 
+estimated to be around 1E-3 events per hour. The full 300 $fb^{-1}$ 
+collected during the next run of the LHC corresponds to a trigger live time of $4.2\times 10^3$ hours, which
+corresponds to a total background of around 3 events. With the ability to efficiently trigger
+and reconstruct SPE events, this will allow sensitivity to charges down to $Q=0.003 e$ for particles of
+mass < 1GeV and extend the best sensitivity for millicharged particles of mass $< 40$ GeV more than
+an order of magnitude lower in charge.
+
+\subsection*{Construction and operation}
+
+The bulk of the construction will be the assembly of the 64 bars and 6 panels.
+Each assembly consists of optically coupling a PMT held in a base
+to the scintillator, wrapping it with reflective material, and light-tight black
+taping. One assembled each scintillator volume must be checked for light leaks and calibrated.
+This work is relatively simple and for the phase 1 prototype was largely 
+done by undergraduates at UCSB. Once assembled, the bars and panels
+must be sent to CERN to be installed into the detector. This work would be largely 
+undertaken by postdoc and graduate student members of the milliQan collaboration 
+(who are funded separately from this award). Given the experience with the phase 1 
+prototype, the detector will be operated with high efficiency to collect physics quality
+data. Similar strategies will be used to calibrate the response and timing of the 
+detector, simulate signal and background processes and analyse the data to 
+search for millicharged particles. These
+are documented fully in Ref.~\cite{ball2020search}.
+
+\subsection*{Budget}
+
+The budget for the phase 2 prototype to be covered by this award corresponds to total of \$43.3k and
+breaks down as follows:
+
+\begin{itemize}
+    \item EJ-200 plastic scintillator bars (72) - \$9.6k
+    \item CAEN V1743 digitizers (3) - \$22.5k
+    \item Amplifier and filter circuit  - \$0.2k
+    \item HV and readout cables - \$1.5k
+    \item Scintillator sheets - \$3.6k
+    \item Travel/shipping to CERN - \$5k
+    \item Mechanical structure - \$0.8k
+\end{itemize}
+
+The running costs will be covered by an agreement with CERN colleagues that has 
+worked well in operation of the phase 1 prototype. The following items will be reused, at no 
+cost, from the phase 1 prototype: HV and readout cables for 31 channels, two CAEN V1743 digitizer boards,
+HV supply, support structure, and two scintillator slabs. The R878 PMTs that will be coupled to each scintillator volume
+are available, again at no cost, from a previous experiment. My salary will be paid by
+Dr. David Stuart.
+
+\subsection*{Timeline}
+
+The next run of the LHC is expected to begin in late 2021, providing a clear target 
+for the completion of the detector. Based on our experience constructing the initial prototype, 
+approximately six months is estimated for the construction and a further six months is
+estimated for commissioning. The detector would be expected to 
+collect $100~\text{fb}^{-1}$ in each of 2022, 2023 and 2024.
+Given the experience gained from the prototype, I believe an initial publication with the data set collected 
+in 2021-2022 could be achieved by early to mid 2023 with further publications with enlarged datasets 
+in early 2024 and 2025. The milliQan detector can then be further 
+upgraded during next the long shutdown (2024--2027), with the upgraded
+detector taking data at the High Luminosity LHC with a significantly increased instantaneous luminosity from 2027. 
+
+
+
+
+%% end of file `template.tex'.
+
+\bibliographystyle{unsrt}
+\bibliography{citron_PROP} % 'citron' is the name of a BibTeX file
+
+
+\end{document}
