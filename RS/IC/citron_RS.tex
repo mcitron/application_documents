@@ -1,4 +1,4 @@
-\documentclass[11pt,twocolumn]{article}
+\documentclass[11pt,a4paper]{article}
 \usepackage{amsmath}
 \usepackage{cancel}
 \usepackage{xspace}
@@ -11,8 +11,10 @@
 \usepackage[dvipsnames]{xcolor}
 
 % \usepackage[a4paper, total={7in, 8in}]{geometry}
-\usepackage[bottom=0.4in,left=0.8in,right=0.8in]{geometry}
-\usepackage{fancyhdr}
+\usepackage[top=2cm,bottom=2cm,left=2cm,right=2cm]{geometry}
+\setlength\headheight{13.6pt}
+\usepackage{fontspec} 
+\setmainfont{Arial}
 
 \theoremstyle{plain} \numberwithin{equation}{section}
 \newtheorem{theorem}{Theorem}[section]
@@ -28,7 +30,7 @@
 \newtheorem{question}{Question} \topmargin-2cm
 % \renewcommand\refname{Five most important publications}
 
-\pagestyle{fancy}\lhead{Matthew Citron}\rhead{July 2020}
+\pagestyle{fancy}\lhead{Matthew Citron}\rhead{August 2020}
 \chead{{\large{\bf Searching for LLPs at the LHC}}} \lfoot{} \cfoot{\bf \thepage}
 
 \DeclareRobustCommand{\alphat}{$\alpha_{\text{T}}~$}
@@ -43,26 +45,24 @@
 % \noindent 
 
 The most important target of the LHC is the discovery of new physics.
-Most searches at the LHC have focused on prompt decays of new particles,
-however, long-lived particles (LLPs), with a non-negligible lifetime,
-are a common feature in models of 
-new physics. 
-The discovery of a new LLP would be a powerful probe as measurement 
-of the lifetime provides insight into the fundamental symmetries
+While most searches at the LHC have focused on prompt decays,
+long-lived particles (LLPs), with a non-negligible lifetime, are a common feature in models of 
+new physics. The discovery of a new LLP would form a powerful probe as measurement 
+of its lifetime can provide insight into the fundamental symmetries
 and hierarchies of scale in the underlying model.
 Searching for long-lived signatures is particularly 
 challenging due to the necessity of dedicated reconstruction 
 and triggering, and the prediction and rejection of non-standard backgrounds. 
-I am going after this challenge in three ways: exploiting
+I am going after this challenge in two ways: exploiting
 the general purpose CMS detector in new and innovative ways,
-collaborating with phenomeonlogists in the long-lived community to 
-explore new ideas and techniques, and constructing a new dedicated 
-detector for millicharged particles.
+and constructing a new dedicated detector for long-lived particles
+with a fractional electric charge.
+In undertaking these efforts, I will continue to strengthen my collaboration
+with phenomenologists to explore new ideas and techniques.
 
 I have taken new approaches in searching for LLPs with
-the CMS detector, carrying out an analysis
-that pioneered the use of calorimetry timing 
-to search for long-lived particles.
+the CMS detector, pioneering the use of calorimetry timing 
+to search for LLPs.
 This analysis was the first at CMS to target hadronic decays 
 beyond the acceptance of the tracking 
 detector. The results were shown publicly at the Moriond Electroweak 
@@ -70,62 +70,69 @@ conference in 2018 and published
 in PLB in October 2019~\cite{2019134876}, 
 the first published search from CMS or ATLAS using the 
 full 135 \ifb Run 2 data set provided by the LHC at $\sqrt{s} = 13$ TeV. 
-
-After completing the timing search I was selected as one of the two 
+Since completing this search I have continued to generate new ideas,
+initiating the first CMS search for hadronic decays in the muon system
+and developing new triggers. After completing the timing search I was selected as one of two 
 coordinators of the CMS physics subgroup responsible for overseeing
 the long-lived search program. I have made encouraging 
-new ideas a key thrust of my work, particularly in the 
-crucial areas of dedicated triggering and reconstruction of long-lived signatures.
-To this end, I have directly engaged with
+new ideas a key thrust of my work, directly engaging with
 trigger, reconstruction and detector experts as well as organising the 
-first CMS long-lived workshop. I believe communication with theorists and experimentalists
+first CMS long-lived workshop. 
+
+I am active in an another experiment besides CMS, the proposed milliQan
+detector for millicharged particles. I led the 
+construction and data analysis of a prototype detector
+at the LHC and designed a search 
+for particles with charges much smaller than the electron charge
+that provides world-leading constraints. I have also used this data to 
+characterise the backgrounds and 
+develop significant improvements for the design of the full detector.
+
+I believe communication with theorists and experimentalists
 across the field is critical to keeping a broad view of well-motivated
 new physics and new ideas for discovery at detectors. I have engaged
 in phenomenological studies throughout my research~\cite{deVries:2015hva,Citron:2012fg} 
-and am actively involved in coordination efforts for the wider LLP community
-As part of the LHC LLP community organising committee, I
-organised the LHC LLP workshop in May 2020 and am currently
-coordinating a study for the US snowmass process.
+and am actively involved in coordination efforts for the wider LLP community.
+I am coordinating a study for the US Snowmass process and, 
+as a member of the LHC LLP community organising committee, I
+organised the LHC LLP workshop in May 2020.
 
-I am active in an experiment beyond CMS, with a leading 
-role in the construction and data analysis of a prototype 
-millicharged particle detector
-at the LHC (the milliQan prototype). In particular,
-coordinating a search for particles with charges much
-smaller than the electron charge
-that provides world-leading constraints. 
-
-In the coming years, the jumps in energies and luminosity that marked the previous running of the 
-LHC will come to an end. While inclusive analyses will continue to play a role in 
-exploring ever larger phase space, new ideas and detectors will be critical to 
-providing the best chance for discovery. In the following paragraphs I describe
+In the coming years, the jumps in energies and luminosity that marked the previous runs of the 
+LHC will come to an end. While inclusive analyses will continue to play a role, 
+new ideas and detectors will be critical to 
+providing the best chance for discovery. In the following paragraphs, I describe
 how I will use my fellowship to search for long-lived signatures at the LHC.
 
 \section*{Searching for LLPs with CMS}
 
 One of the most challenging, but well-motivated, signatures
-of new physics is the soft decay of LLPs to jets. Such soft signatures can 
-arise for long-lived particles produced though
+of new physics is the hadronic decay of LLPs without large
+energy deposits in the final state. Such signatures can 
+arise for LLPs produced though
 well-motivated Higgs or vector boson decays, as well as for ``compressed'' models 
 that have small mass splittings, a common 
-feature of new physics models with long-lived particles. 
+feature of new physics models with LLPs.
 The low energy scale of such signatures means general purpose triggers
-are inefficient and rejecting backgrounds with the current CMS subdetectors 
+are inefficient and rejecting backgrounds with the current CMS sub-detectors 
 is challenging. New dedicated triggers and CMS detector upgrades will 
 therefore provide the best prospects
-for discovery of such signatures, however, the Run 2 data set provides
-the perfect opportunity to test new techniques and search strategies
-and characterise non-standard backgrounds. To this end I have initiated the 
-first search for displaced hadronic decays in the CMS muon system.
-
-In the first years of my fellowship, I plan to concentrate on prototyping 
-searches with the Run 2 data set. This will include adapting the delayed jets search
+for discovery. However, the Run 2 data set provides
+the perfect opportunity to develop new techniques 
+and characterise non-standard backgrounds, allowing new searches
+that can already provide significantly improved sensitivity to a range
+of signatures. Throughout my fellowship, I plan to collaborate with
+phenomenologists to identify strategies to target such LLP signatures in current
+and future runs from the LHC.
+    
+In the first years of my fellowship, I plan to continue to
+explore new techniques with the Run 2 data set. This will include 
+adapting the calorimetry timing search
 to target lower energy LLPs, using prompt objects
 in the final state to provide trigger acceptance. I am already collaborating with 
-researchers at Imperial College on 
+researchers at Imperial College (IC) on 
 searching for displaced decays of sterile neutrinos
 using a deep neural network to tag displaced jets. During my fellowship, I plan to develop
-the machine learning tagger further to encompass more exotic signature such as dark-showers, in
+the machine learning tagger further to encompass more exotic signatures such as dark-showers, in
 which a parent particle promptly hadronises to a high 
 multiplicity of intermediate long-lived dark-QCD particles that undergo displaced decays. 
 This can lead to an ``emerging jet'' signature that so far has only
@@ -133,116 +140,121 @@ been experimentally explored for highly energetic events. For Run 2, a specialis
 with a soft displaced single muon, the b-parked data set, provides an ideal sample to search for
 such a signature.
 
-As we prepare for the upcoming Run 3 of the LHC, which is expected to provide a $\sim 300$ \ifb
-data set from 2022--2025 at $\sqrt{s} = 14$ TeV, it is clear that continuing to slowly accrue
-data at a similar energy to Run 2 provides little prospect for the discovery of new physics.
-It is therefore vital to develop new trigger strategies targeting exotic signatures
-such as displaced decays of LLPs. I have directly engaged with trigger and hardware experts 
-on multiple occasions to encourage the development of new strategies. 
-I am currently working on hardware based 
-triggers for the CMS HCAL, taking advantage of the depth segmentation and timing 
-information provided by the recent upgrades to target a variety of signatures including displaced
-decays and emerging jets. This builds on my previous experience 
+The upcoming Run 3 of the LHC is expected to provide a $\sim 300$ \ifb
+data set from 2022--2025 at $\sqrt{s} = 14$ TeV. 
+I plan to significantly improve the sensitivity
+of searches for long-lived particles by developing dedicated triggers to 
+dramatically increase signal acceptance.
+I have directly engaged with trigger and hardware experts 
+to encourage the development of new strategies
+and am working on hardware-based triggers for the CMS HCAL, 
+taking advantage of the depth segmentation and timing 
+information provided by the recent upgrades to target a variety of signatures, 
+including displaced decays and emerging jets. This builds on my previous experience 
 implementing hardware trigger algorithms for jets and energy sums. 
 In the first year of my fellowship I plan to
-work with trigger experts at Imperial College to implement algorithms such as these
-and will work to optimise their performance throughout Run 3. This will allow me to design 
-searches with substantially improved sensitivity, building 
-on prototype analyses with Run 2 data.
+work with trigger experts at IC to implement such algorithms and will 
+work to optimise their performance throughout Run 3. This will allow me to design 
+searches with substantially improved sensitivity and characterise the new physics in
+the case of a discovery. 
 
-Looking forward to HL-LHC, scheduled to begin in 2027, there are ample opportunities
-for detector upgrades to substantially improve sensitivity to LLPs with a 3000 \ifb
-data set. One such new detector, the High Granularity Calorimeter, 
-provides high resolution spatial, timing and energy deposits. Imperial College is actively involved in 
+The HL-LHC, scheduled to begin in 2027, is expected to provide a $\sim 3000$ \ifb
+data set. Coupled with planned detector upgrades, the sensitivity to long-lived particles
+can be substantially extended. One such upgrade project, the High Granularity Calorimeter, 
+provides high resolution spatial, timing and energy measurements. IC researchers are involved in 
 developing the clustering algorithms used to reconstruct particles showering in the detector. 
 During my fellowship I plan to build on my experience with searches for 
-displaced decays using calorimetry detectors, by collaborating with researches at Imperial College
-to develop reconstruction strategies for displaced decays in new detectors such as the HGCAL.
+displaced decays using calorimetry detectors, by collaborating with researchers at IC
+to develop reconstruction methods for displaced decays in new detectors such as the HGCAL.
 As for Run 3, the trigger will be vital to extend acceptance to new physics and so I plan
-to develop new strategies with the flexible architecture of FPGAs, largely being developed in 
-the UK, to design hardware triggers for LLPs.
+to develop new LLP trigger strategies by exploiting the flexible architecture of FPGAs, 
+largely being developed in the UK. 
 
-\section*{Searching for millicharged particles with milliQan}
 
-The milliQan detector is a small dedicated detector 
-designed to search for fractionally 
-charged particles produced in the high energy proton-proton collisions of the LHC. 
-Such particles can be well motivated by dark sector models where a kinetic mixing between
-the dark and SM photon gives dark fermions a small electric charge.
-The existing, general purpose detectors at the LHC are blind to particles with
-$Q< 0.1 e$ as fractionally charged particles deposit only $(Q/e)^2$ of the energy 
+\section*{Searching for millicharged LLPs with milliQan}
+
+The CMS detector can provide impressive sensitivity to a wide
+range of new physics, however, certain long-lived signatures
+require a dedicated detector to allow discovery. Millicharged 
+particles can be well-motivated by dark sector 
+models where a kinetic mixing between the dark and SM photon 
+gives dark fermions a small electric charge.
+The existing general purpose detectors at the LHC are blind to particles with
+$Q< 0.1 e$ as they deposit only $(Q/e)^2$ of the energy 
 deposited by a particle with charge $e$ of
-the same mass. Therefore, a dedicated experiment is needed to 
-provide sensitivity to the signatures of 
-millicharged particles. The proposed experiment achieves 
-this through the use of an array of long scintillator
-bars properly aligned with the CMS interaction point, where the LHC beams are
-brought together for collisions. Each scintillator bar is coupled to a
-Photomultiplier Tube (PMT) capable of detecting a single scintillation photon, providing sensitivity to
-charges as low as $0.001 e$. 
+the same mass. However, the proposed milliQan detector can cover this blind spot 
+by using an array of long scintillator
+bars aligned with the CMS interaction point, where the LHC beams are
+brought together for collisions. To allow sensitivity to charges as low 
+as $0.001 e$, each scintillator bar must be coupled to a
+Photomultiplier Tube (PMT) capable of detecting a single scintillation photon.
 
-Over the past few years I have led the design, operation and analysis
-of data from a small prototype of the milliQan detector. I have taken active involvement
-in the construction of the scintillator and PMT components. With the data
+Over the past few years I have led the design, construction and operation 
+of a small prototype of the milliQan detector. Using the data
 collected during the 2018 running of the LHC, I coordinated the activities
 of a group of approximately 15 postdocs, graduate students 
 and undergraduates to calibrate the detector and undertake a
 search for millicharge particles with world-leading sensitivity~\cite{ball2020search}. 
 
-In the course of my fellowship I would like to continue my leadership role 
-within the milliQan collaboration. We are currently seeking around £$1.6m$ in 
-funding to build a large scale detector in time for the HL-LHC. 
-However, with the lessons learnt from the 
-prototype I have designed a smaller experiment, the phase-1 milliQan detector, 
-that may be installed in time for the upcoming run of the LHC. 
-This detector, with a cost of only £$\sim$40k, uses an additional layer of scintillator 
+In the course of my fellowship I plan to continue my leadership 
+within the milliQan collaboration. Using the lessons learnt from the 
+prototype I have designed an upgraded experiment, the phase-1 milliQan detector, 
+that can be installed in time for Run 3 of the LHC. 
+This detector uses an additional layer of scintillator 
 as well as electronic noise
 filtering and amplification of pulses from the PMTs to overcome limitations of the prototype
-and allow the reach for millicharged particles to be extended by 
-up to an order of magnitude in charge. I plan
-to construct the scintillator plus PMT
-components at Imperial College before assembling the detector in the experimental cavern
-in time for Run 3 of the LHC.
-The construction of detector components is relatively simple and, 
-as for the prototype, can be largely undertaken
-by students, with my supervision. Given the experience with the
-prototype, this will be carried out with high efficiency to collect physics quality
-data. Similar strategies to the prototype will be used to calibrate the response and timing of the 
+and allow the reach for millicharged particles to be lowered by 
+up to an order of magnitude in charge. I received the Harvey L. Karp Discovery Award
+based on my proposal to build the phase-1 milliQan detector that 
+will provide \textsterling40k in funding to 
+fully construct this experiment. 
+I plan to construct the scintillator and PMT
+components at IC before assembling the detector in the experimental cavern
+in time for Run 3 of the LHC.  Similar strategies to the prototype will be used to 
+calibrate the response and timing of the 
 detector, simulate signal and background processes and analyse the data to 
-search for millicharged particles.
- 
-I also plan to further my role with the full-scale milliQan detector, as well
-as support similar proposals for scintillation based detectors at Fermilab and J-PARC, which
-have complementary sensitivity for lower mass millicharged particles. I am coordinating an effort to
-robustly estimate the reach of these detectors, given the experience from the prototype. 
-If funding becomes available, I will take a leading
-role in the design and construction of the detector as well as the data analysis.
-% and I am coordinating the projections for a range of similar detectors
+search for millicharged particles. % The construction of detector components is relatively simple and, 
+% as for the prototype, can be largely undertaken
+% by students, with my supervision. Given the experience with the
+% prototype, this will be carried out with high efficiency to collect physics quality
+% data.
+
+The phase-1 milliQan detector will be an important intermediate stage for building a full-scale
+milliQan detector at the HL-LHC. I plan to continue my role in the design, construction and
+operation of this experiment. In the event of a discovery, the milliQan detector can be used to trigger
+the CMS detector to allow the new physics to be fully characterised. 
+I will use my leading roles in both experiments to develop this trigger.
+Finally, I will contribute to similar proposals for scintillator-based detectors at Fermilab and J-PARC, 
+which have complementary sensitivity for lower mass particles. I am coordinating an effort to
+robustly estimate the reach of all such millicharged particle detectors.
 
 \section*{Summary}
 
 As a Postdoctoral Scholar working on CMS and milliQan
 I have seized the opportunity to take leading roles within both collaborations
-as well as contributing to the larger long-lived community.
-Over the next five years, I plan to 
-play a leading role within the milliQan collaboration, 
-prototype new searches for LLPs with Run 2 data, develop new triggers and
-analyses for the upcoming LHC Run 3, and ensure detectors at the HL-LHC
-provide optimal sensitivity to LLPs. I believe my wide experience of the experimental
-and theoretical challenges in searching for LLPs will be vital assets in achieving
-the discovery of LLPs at the LHC. Finally, Imperial College is an ideal host institute, providing
-complementary technical expertise to allow the hardware deployment of new triggers and LLP
-reconstruction strategies.
+as well as contributing to the larger LLP research community.
+My experience with searches, phenomenology and 
+new detectors means I am uniquely positioned to exploit the data
+from the LHC to achieve a discovery of new long-lived physics.
+Over the next five years, I plan to use this fellowship to establish
+myself as an independent researcher. I will play a leading role 
+within the milliQan collaboration, develop new searches for LLPs with Run 2 data, 
+design new triggers and analyses for the upcoming LHC Run 3, and ensure detectors at the HL-LHC
+provide optimal sensitivity. Finally, IC is an ideal host institute, providing
+complementary technical expertise to allow the hardware deployment of new triggers and
+reconstruction strategies. I will develop IC's role at the forefront
+of the search for new physics and as a leader in the CMS trigger and
+upgrade projects.
 
 
 \section*{Proposed timeline}
 \begin{description}
-\item[Year 1 (2021)]{Searches for light and compressed LLPs with Run 2 dataset, develop new trigger seeds
-targeting displaced decays, construct phase-1 milliQan detector in time for start of next run of the LHC}
-\item[Year 2 (2022)]{Run 3 of the LHC begins, publish results of Run 2 searches with improved limits or discovery, use experience to improve triggers for long-lived signatures and design searches with Run 3 data, operate phase-1 milliQan detector during Run 3, begin construction of millicharge detectors at Fermilab and/or J-PARC (if funding available)}
+\item[Year 1 (2021)]{Searches for LLPs with Run 2 dataset, develop new trigger seeds
+targeting displaced decays, construct phase-1 milliQan detector, pursue phenomenological study of signatures such as emerging jets}
+\item[Year 2 (2022)]{Run 3 of the LHC begins, publish results of Run 2 searches, continue to develop triggers and design searches for long-lived signatures with Run 3 data, operate phase-1 milliQan detector, begin construction of millicharged particle detectors at Fermilab and/or J-PARC (if funding available)}
 \item[Year 3 (2023)]{Publish first search results from Run 3 taking advantage of new triggers, develop algorithms for LLP triggering and reconstruction for HL-LHC detectors, continue to operate and publish first search results with phase-1 milliQan detector}
-\item[Year 4 (2024)]{Publish search results from Run 3 using improved triggers developed for 2023 data-taking, continue to develop LLP algorithms for HL-LHC detectors}
-\item[Year 5 (2025)]{Publish full Run 3 search results characterising excess or with substantially improved limits, begin construction of full milliQan detector at LHC (if funding available)}
+\item[Year 4 (2024)]{Publish LLP search results from Run 3 using improved triggers developed for 2023 data-taking, continue to develop LLP algorithms for HL-LHC detectors}
+\item[Year 5 (2025)]{Publish full Run 3 search results, begin construction of full milliQan detector at LHC (if funding available)}
 \end{description}
 
 \bibliographystyle{unsrt}
