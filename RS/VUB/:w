@@ -32,6 +32,7 @@
 % \addtolength{\topmargin}{-\headsep}
 %
 % \setlength{\oddsidemargin}{0in}
+%\newcommand{\alphat}{\ensuremath{\alpha_{\text{T}}}\xspace}
 \DeclareRobustCommand{\alphat}{$\alpha_{\text{T}}~$}
 \DeclareRobustCommand{\met}{$\mbox{$E_\text{T}^{\rm miss}$}\xspace$}
 
@@ -48,11 +49,11 @@
 %\section*{\fontsize{30}{30}\selectfont Statement of intent}
 \noindent 
 
-I believe that I am well suited to complementing the activities of the 
+I believe that I would be well suited to complementing the activities of the 
 elementary particle physics group at Vrije Universiteit Brussel (VUB). 
 The position at VUB provides the perfect opportunity over the next three years 
 to strengthen my leadership role within the milliQan collaboration as we move 
-towards construction of the milliQan detector, increase my opportunities for 
+towards construction of the detector, increase my opportunities for 
 teaching and supervision, and make VUB a European centre
 for research and development of the milliQan detector.
 
@@ -87,82 +88,80 @@ Europe and Asia. Dr. Steven Lowette, a faculty member of the elementary particle
 physics group at VUB, has been a member of the collaboration since
 2019. The reasonably small size of the collaboration means that a single institute
 can have a significant impact on the design and performance of the detector. 
-With the visiting position at VUB, the research topics outlined below
-will allow Dr Lowette and I to drive 
-the next phase of the milliQan experiment. In addition,
+With the visiting position, Dr Lowette and I can drive the development
+of the next phase of the milliQan experiment. In addition,
 there is significant scope for students to have vital contributions to 
 achieving the physics goals of the experiment.  
 
 \subsection*{Main activities at VUB}
 
 The milliQan detector requires the assembly of a total of 1728 bars as well
-as the slabs and panels. Partly, my activities at VUB will involve 
-providing expertise to allow the construction and calibration of the detector components, 
+as the slabs and panels. Partly, my activities would involve 
+providing expertise to allow the construction and calibration of the detector components at VUB, 
 however, the main purpose for my application is
 to lead research projects that will allow VUB to make crucial contributions to
 the design and performance of the milliQan experiment. 
-This will be carried out in collaboration with Dr Lowette and
-can form a significant part of the thesis work for undergraduate and graduate
-students at VUB.
+This would be carried out in collaboration with Dr Lowette and
+can form a significant part of thesis work for undergraduates and graduates at VUB.
 
 The potential for the full detector to actively veto backgrounds from cavern radiation
 and cosmic muon shower particles is of vital importance to 
-achieve sensitivity to signals with $Q \lesssim 0.05 e$. At VUB, I plan to 
+achieve sensitivity to signals with $Q \lesssim 0.01$. At VUB, I plan to 
 evaluate the efficiency to identify backgrounds using 
 bars on the outer edges of the detector. If a student is available, it will also
 be possible to study possibilities for improving the light collection efficiency of the panels 
 with light guides or multiple PMT readouts. These studies can be undertaken 
 both on the surface at VUB and CERN, and underground at the detector position.
 
-Higher charge signals ($Q \gtrsim 0.05 e$) face lower backgrounds from cavern processes,
+Higher charge signals ($Q \gtrsim 0.05$) face lower backgrounds from cavern processes,
 however, distinguishing the signal from beam muons is difficult as both 
 signatures will saturate the readout. The slabs that will be placed at the top and bottom 
 of each milliQan array are therefore critical to discriminate higher charge signals from background.
 With this position I will be able to finalise the design of these crucial detector components such that the 
-design and construction of the slabs will be driven by VUB.
+design and construction of these slabs will be driven by VUB.
 
 It will be critical to calibrate the energy response and timing of the bars. 
 This calibration could be achieved using cosmic muons and their shower particles, 
 however, the spread in position and energy of these processes
 leads to large uncertainties. A radioactive source, such as Na22, would allow much greater control 
 of these source properties and allow a higher precision calibration, crucial to efficiently 
-rejecting backgrounds. With a student, I can design a source based calibration scheme 
-at VUB that will be applied to the detector in the experimental cavern after construction.
+rejecting backgrounds. With a student, I could design a source based calibration scheme 
+at VUB that would be applied to the detector in the experimental cavern after construction.
 
 % \subsection*{Contingencies and other overlap with VUB}
 It is possible that funding will not be available to construct the full milliQan detector in
-time for the next run of the LHC. In this case a smaller 
+time for the next run of the LHC, due to begin in May 2021. In this case a smaller 
 detector may be constructed using available Hamamatsu R878 PMTs from a previous experiment. 
 Such a detector can be approximately six times
 larger than the previous prototype and collect at least five times the data, allowing for
 significantly improved limits. The noise levels of the R878 PMTs are too high to efficiently 
-trigger on the low energy signatures of particles of $Q \lesssim 0.005 e$, however, studies with the prototype
+trigger on the low energy signatures of particles of $Q < \sim 0.005 e$, however, studies with the prototype
 have shown it is possible to reject this noise using a simple filter. The performance of
 such a contingency experiment can be dramatically improved through the development of a
-filter and amplifier that I will design and study at VUB. This is a clear opportunity 
+filter and amplifier that I will design and study at VUB. This would be a clear opportunity 
 for an undergraduate research project.
 
 Alternative locations of the milliQan detector, either in the forward region or at a neutrino source 
 at FNAL or J-PARC also provides an opportunity for research at VUB, 
-regardless of medium-term funding availability. In this case, the production rate 
-for lower masses is greatly enhanced.
+regardless of medium-term funding availability. In this case the production rate 
+for lower masses would be greatly enhanced.
 
 In addition to shared interests in milliQan, my work on long-lived and exotic signatures
-at CMS overlaps with the research topics of Dr Lowette and Dr Blekman at VUB. 
-While not being the main purpose of the position, I believe there will be ample opportunity
+at CMS overlaps with the research topics of Dr Steven Lowette and Dr Freya Blekman at VUB. 
+While not being the main purpose of the position, I believe there would be ample opportunity
 to build new collaborations for searches with the CMS detector. One possible example
-is the development of new dedicated triggers for fractionally 
-charged particles to carry out a search using the muon system, having potential
-sensitivity to higher mass particles with $Q \gtrsim 0.1 e$, with obvious complementarity 
+would be the development of new dedicated triggers for fractionally 
+charged particles to carry out a search using the muon system, with possible 
+sensitivity to higher mass particles with $Q \gtrsim 0.1$, with obvious complementarity 
 to the targets of the milliQan detector.
 
 \subsection*{Funding}
 
-I plan to take part in funding proposals from VUB for the full milliQan detector
+I would plan to take part in funding proposals from VUB for the full milliQan detector
 from the FWO funding agency. I have had experience contributing to a National Science
 Foundation funding proposal for milliQan. I believe my extensive 
 experience with both building detector components and coordinating 
-a search for millicharged particles will strengthen the technical
+a search for millicharged particles would strengthen the technical
 expertise of future proposals.
 
 \subsection*{Timeline}
@@ -178,7 +177,7 @@ required under the contingency scenario of a smaller detector with approximately
 In either scenario the detector would be expected to collect $100~\text{fb}^{-1}$ in 2022 and a further $100~\text{fb}^{-1}$ in 2023.
 Given the experience gained from the prototype, I believe a publication with the data set collected 
 in 2022 could be achieved by early to mid 2023 and a second publication including data collected in both years in
-early 2024. The milliQan detector can then be upgraded during next the long shutdown (2024--2027), with the upgraded
+early 2024. The milliQan detector can then be upgraded during next the long shutdown (2024-2027), with the upgraded
 detector taking data at the High Luminosity LHC with a significantly increased instantaneous luminosity from 2027. 
 
 
