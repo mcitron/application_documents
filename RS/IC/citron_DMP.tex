@@ -1,0 +1,128 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{amsmath}
+\usepackage{cancel}
+\usepackage{xspace}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amscd}
+\usepackage{amsfonts}
+\usepackage{graphicx}%
+\usepackage{fancyhdr}
+\usepackage{atbegshi}
+\usepackage[dvipsnames]{xcolor}
+
+% \usepackage[a4paper, total={7in, 8in}]{geometry}
+\usepackage[top=2cm,bottom=2cm,left=2cm,right=2cm]{geometry}
+\setlength\headheight{13.6pt}
+\usepackage{fontspec} 
+\setmainfont{Arial}
+
+\theoremstyle{plain} \numberwithin{equation}{section}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{finalremark}[theorem]{Final Remark}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{question}{Question} \topmargin-2cm
+% \renewcommand\refname{Five most important publications}
+
+\pagestyle{fancy}\lhead{Matthew Citron}\rhead{September 2020}
+\chead{{\large{\bf Data management plan}}} \lfoot{} \cfoot{\bf \thepage}
+
+\DeclareRobustCommand{\alphat}{$\alpha_{\text{T}}~$}
+\DeclareRobustCommand{\met}{$\mbox{$E_\text{T}^{\rm miss}$}\xspace$}
+\DeclareRobustCommand{\ifb}{$\rm{fb}^{-1}~$}
+\usepackage{cite}
+\usepackage{hyperref}
+
+\newcounter{list}
+
+\begin{document}
+\section*{Introduction}
+
+The data management strategy outlined in this document follows the recommendations
+outlined by the Data Preservation for HEP (DHEP) group. The data management and 
+data processing for the CMS experiment is governed by the Computing Models of the WLCG and 
+the LHC Experiments (\href{http://cds.cern.ch/record/1695401}{http://cds.cern.ch/record/1695401}). 
+The Computing Models ensure that multiple copies of all raw data 
+are stored in separate facilities, resilient metadata catalogues and
+experimental conditions dataavases are maintained, 
+and software versions are stored and indexed. As all data can be recreated from 
+these raw data, these models ensure robust data preservation for current and future
+generations of particle physicists. While the milliQan
+experiment is not covered within these Computing Models, the same standards of data preservation
+will be met. 
+
+\section*{Data processing and storage}
+
+The types of data that are produced by particle physics experiments can
+be summarised into four ``levels":
+
+\begin{description}
+    \item [Level-4] {The most basic raw data produced by the experiments from which all other data can be derived.}
+    \item [Level-3] {Reconstructed data that can be used by researchers for physics analysis.}
+    \item [Level-2] {Data that can be used for outreach or provided to external researchers.}
+    \item [Level-1] {Published analysis results}
+\end{description}
+
+The Level-4 and Level-3 data produced by the CMS experiment is entirely stored within the WLCG. 
+The raw data is passed rapidly from the CMS experimental site to
+the Tier-0 facility where it is duplicated to tape. The data is propagated by a 10Gbit/s or higher data transfer 
+to Tier-1 data centres where a second copy of the data is stored on tape. CERN and 
+remote data facilities assume responsibility for the indefinite storage and future accessibility of the raw data.
+Reconstruction algorithms are run to produce Level-3 data that is stored at Tier-1 and Tier-2 facilities. 
+This data is maintained on disk and duplicated depending on its popularity. Several hundred PB of
+storage within the WLCG is required on both disk and tape.
+The software used to reconstruct the data must also be preserved. This is maintained, along with
+detailed documentation on dedicated Github and Gitlab respositories.
+% Simulated data can in principle always be recreated provided 
+% the software and the associated transforms have been preserved. 
+% However out of prudence some MC data is also preserved along with associated real data.
+
+The Level-4 data produced by the milliQan prototype is maintained
+on disk at the University of California, Santa Barbara. This raw data is duplicated and stored
+on external hard-drives and a dedicated database is maintained to ensure future accessibility. 
+The total size of the dataset collected by the prototype is around a few hundred TB and
+a similar dataset size is foreseen for the phase-1 milliQan detector. In order to improve the 
+site redundancy an additional copy of the raw data will be produced and stored on disk at 
+facilities in the US and Europe. The Level-3 data is stored on University of California supported
+cloud-based storage that is secure and FERPA compliant. The software used to reconstruct the 
+data is maintained on dedicated Github repositories. The metadata on the software version used
+for the reconstruction of data for publication will be preserved on Github. 
+The conditions of the detector during data-taking,
+including the HV values applied to the PMTs and the magnetic field in the cavern will be stored
+within the Level-4 data.
+
+The analyses planned within this proposal will make use of the CERN Analysis Preservation (CAP) service
+to facilitate their future reproduction. This service 
+allows completed anlayses to be preserved, including resources such as files, code, workflows 
+and metadata, on a centralised platform (\href{https://analysispreservation.cern.ch/welcome}{https://analysispreservation.cern.ch/welcome}).
+
+\section*{Public access to data}
+
+Results of the research will be
+disseminated in standard refereed journals. Additional information
+will be maintained on resources including the 
+CERN document server (CDS) and HepData. The software required to access the data
+on CDS (primarily ROOT) is publicly available and documented. The data 
+format (YAML) for HepData is designed for long-term legibility and validity
+of the data. For milliQan, Level-1 and Level-3 data
+will also be shared online and archived on UC supported cloud-based storage.
+Sufficient information will be provided to allow searches undertaken as
+part of this proposal to be reinterpreted by researches outside of
+the CMS and milliQan collaborations.
+
+Select CMS Level-2 and Level-3 data, including simulated data, will be released on the CERN Open Data Portal 
+some years after the data is collected. This data is suitable for both educational and research purposes
+and are issued with Digital Object Identifiers such that they may be cited.
+
+\end{document}
+
+
+%% end of file `template.tex'.
+
